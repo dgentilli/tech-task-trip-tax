@@ -8,7 +8,7 @@ import { NavMenuItemsWrapper } from '../globalStyles/navigationStyles';
 const NavWrapper = styled.div`
   position: sticky;
   top: 0;
-  background-color: ${theme.color.SKY_BLUE};
+  background-color: ${theme.color.BG_DARK};
   height: 5rem;
   width: 100%;
   z-index: 3;
@@ -22,7 +22,7 @@ function Navbar() {
           to='/'
           style={{
             textDecoration: 'none',
-            color: `${theme.color.TEXT_LIGHT}`,
+            color: `${theme.color.ORANGE}`,
             fontSize: `1.5rem`,
           }}
         >
