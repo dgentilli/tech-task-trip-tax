@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import theme from '../theme';
-import { NavMenuItemsWrapper } from '../globalStyles/navigationStyles';
+import { NavMenuItemsWrapper } from '../globalStyles/reusableStyles';
 
 const NavWrapper = styled.div`
   position: sticky;
