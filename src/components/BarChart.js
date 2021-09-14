@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Bar } from 'react-chartjs-2';
 
-import theme from '../theme';
 import { ChartHeader } from '../globalStyles/reusableStyles';
 
 /**
