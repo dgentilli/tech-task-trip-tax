@@ -11,22 +11,19 @@ const FooterWrapper = styled.div`
   background-color: ${theme.color.BG_DARK};
   color: ${theme.color.TEXT_LIGHT}
   margin-top: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 `;
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <NavMenuItemsWrapper>
+      <NavMenuItemsWrapper footer>
         <Link
           to='/'
           style={{
             textDecoration: 'none',
             color: `${theme.color.BG_LIGHT}`,
             fontSize: `0.9rem`,
+            margin: '1rem',
           }}
         >
           Dashboard
@@ -37,6 +34,7 @@ const Footer = () => {
             textDecoration: 'none',
             color: `${theme.color.BG_LIGHT}`,
             fontSize: `0.9rem`,
+            margin: '1rem',
           }}
         >
           Reports

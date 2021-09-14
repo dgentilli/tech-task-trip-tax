@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavMenuItemsWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${(props) => (props.footer ? 'center' : 'space-between')};
   align-items: center;
   padding: 0 2rem;
   height: 100%;
