@@ -88,7 +88,6 @@ const ReportTable = (props) => {
       let tempList = mockSalesDataByPerson.map((item) => ({ ...item }));
       const newSortedList = tempList.sort(compare);
       setSortedList(newSortedList);
-      console.log({ sortedList });
     }
 
     return () => setSortedList(null);
