@@ -8,7 +8,6 @@ import {
   Input,
   Button,
 } from '../globalStyles/reusableStyles';
-import { mockSalesDataByPerson } from '../mockData';
 
 const ReportTableWrapper = styled.div`
   width: 95%;
@@ -46,7 +45,8 @@ const DataItem = styled.p`
   width: 50px;
 `;
 
-const ReportTable = () => {
+const ReportTable = (props) => {
+  const { mockSalesDataByPerson } = props;
   const [filterInput, setFilterInput] = useState();
   const [filteredList, setFilteredList] = useState();
   const [sortInputCount, setSortInputCount] = useState(0);
