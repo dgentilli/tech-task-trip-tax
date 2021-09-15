@@ -35,3 +35,12 @@ export const Input = styled.input`
   height: 1.5rem;
   border-radius: 0.25rem;
 `;
+
+export const Button = styled.button`
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: ${theme.color.ORANGE};
+  color: ${theme.color.TEXT_DARK};
+  border: none;
+  border-radius: 0.25rem;
+`;
