@@ -1,7 +1,9 @@
 import React from 'react';
 
+import ReportTable from './ReportTable';
+
 function Reports() {
-  return <div>Reports</div>;
+  return <ReportTable />;
 }
 
 export default Reports;
