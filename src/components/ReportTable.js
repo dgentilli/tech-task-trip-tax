@@ -10,7 +10,7 @@ import {
 } from '../globalStyles/reusableStyles';
 
 const ReportTableWrapper = styled.div`
-  width: 95%;
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
 `;
@@ -37,12 +37,14 @@ const Row = styled.div`
 const ColumnHeader = styled.h5`
   color: ${theme.color.TEXT_DARK};
   width: 55px;
+  margin: 0 0.25rem;
 `;
 
 const DataItem = styled.p`
   text-align: left;
   color: ${theme.color.TEXT_DARK};
   width: 50px;
+  margin: 0 0.25rem;
 `;
 
 const ReportTable = (props) => {

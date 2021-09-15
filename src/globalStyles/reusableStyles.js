@@ -18,6 +18,7 @@ export const ChartHeader = styled.h3`
 
 export const InputLabel = styled.div`
   color: ${theme.color.TEXT_DARK};
+  margin-left: 0.5rem;
 `;
 
 export const InputContainer = styled.div`
@@ -28,16 +29,23 @@ export const InputContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const Input = styled.input`
   width: 50%;
   height: 1.5rem;
   border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  @media (min-width: 768px) {
+    margin-left: 0.5rem;
+  }
 `;
 
 export const Button = styled.button`
-  margin: 1rem;
+  margin: 0.5rem 0.25rem;
   padding: 0.5rem;
   background-color: ${theme.color.ORANGE};
   color: ${theme.color.TEXT_DARK};
