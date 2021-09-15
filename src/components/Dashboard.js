@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import DoughtnutChart from './DoughnutChart';
 import BarChart from './BarChart';
-import theme from '../theme';
+import { PageHeader } from '../globalStyles/reusableStyles';
 import { mockSalesDataByPerson } from '../mockData';
 
 /**Importing the mock data here in this component instead of importing directly to the chart
@@ -17,6 +17,12 @@ const DashboardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
 `;
 
 function Dashboard() {
@@ -26,23 +32,22 @@ function Dashboard() {
   );
   const labels = mockSalesDataByPerson.map((item) => item.employeeName);
 
-  React.useEffect(() => {
-    console.log('numSalesByPerson', numSalesByPerson);
-  });
-
   return (
-    <DashboardWrapper>
-      <DoughtnutChart
-        data={salesRevenueByPerson}
-        labels={labels}
-        title='Sales Revenue by Person'
-      />
-      <BarChart
-        data={numSalesByPerson}
-        labels={labels}
-        title='Number of Sales by Person'
-      />
-    </DashboardWrapper>
+    <>
+      <PageHeader>Dashboard</PageHeader>
+      <DashboardWrapper>
+        <DoughtnutChart
+          data={salesRevenueByPerson}
+          labels={labels}
+          title='Sales Revenue by Person'
+        />
+        <BarChart
+          data={numSalesByPerson}
+          labels={labels}
+          title='Number of Sales by Person'
+        />
+      </DashboardWrapper>
+    </>
   );
 }
 

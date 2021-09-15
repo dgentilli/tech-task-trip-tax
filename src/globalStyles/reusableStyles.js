@@ -52,3 +52,12 @@ export const Button = styled.button`
   border: none;
   border-radius: 0.25rem;
 `;
+
+export const PageHeader = styled.h2`
+  color: ${theme.color.TEXT_DARK};
+  text-align: center;
+  margin: 1rem 0;
+  @media (min-width: 768px) {
+    margin: 2rem 0;
+  }
+`;
