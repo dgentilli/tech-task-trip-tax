@@ -15,3 +15,23 @@ export const ChartHeader = styled.h3`
   text-align: center;
   color: ${theme.color.TEXT_DARK};
 `;
+
+export const InputLabel = styled.div`
+  color: ${theme.color.TEXT_DARK};
+`;
+
+export const InputContainer = styled.div`
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Input = styled.input`
+  width: 50%;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+`;
